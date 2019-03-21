@@ -1,0 +1,14 @@
+<div class="rbeer" style="width: 33.333%;">
+      <img class="beerimg" src="{{image_url}}" alt="">
+      <div class="beerbody">
+        <h5 class="beerinfo">{{name}} {{tagline}}</h5>
+        <p class="beerdescr">{{description}}</p>
+        <b> Food Pairing</b>
+           <ul>
+        {{#each food_pairing as |dish|}}
+          <li>{{dish}}</li>
+        {{/each}}
+      </ul>
+       <span><b>Brewer's tips: </b>{{brewers_tips}}</span>  
+      </div>
+</div>
